@@ -1,7 +1,0 @@
-# Netlify redirects file
-# Redirect www to non-www
-https://www.lianasmedicalcentre.com/* https://lianasmedicalcentre.com/:splat 301!
-
-# Redirect HTTP to HTTPS (handled automatically by Netlify)
-# Force HTTPS
-https://lianasmedicalcentre.com/* https://lianasmedicalcentre.com/:splat 301!
