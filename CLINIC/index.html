@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lianas Medical Centre</title>
+  <meta name="description" content="Lianas Medical Centre is a privately-owned low-cost community health center in Kangemi, Westlands Sub County, Nairobi County. Offering inpatient, outpatient, maternity, dental, laboratory, and emergency services." />
+  <meta name="keywords" content="medical centre, hospital, Nairobi, Kangemi, healthcare, maternity, dental, laboratory, ambulance, eye clinic" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Lianas Medical Centre" />
+  
+  <!-- Geo tags for local SEO -->
+  <meta name="geo.region" content="KE-110" />
+  <meta name="geo.placename" content="Nairobi, Kenya" />
+  <meta name="geo.position" content="-1.267167;36.752111" />
+  <meta name="ICBM" content="-1.267167, 36.752111" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Lianas Medical Centre" />
+  <meta property="og:description" content="Lianas Medical Centre is a privately-owned low-cost community health center in Kangemi, Westlands Sub County, Nairobi County." />
+  <meta property="og:image" content="https://lianasmedicalcentre.com/assets/images/logo.png" />
+  <meta property="og:url" content="https://lianasmedicalcentre.com" />
+  <meta property="og:site_name" content="Lianas Medical Centre" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lianas Medical Centre" />
+  <meta name="twitter:description" content="Affordable healthcare services in Kangemi, Nairobi. Inpatient, outpatient, maternity, dental, laboratory, and emergency services." />
+  <meta name="twitter:image" content="https://lianasmedicalcentre.com/assets/images/logo.png" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="icon" href="assets/favicon/favicon.ico" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <meta name="theme-color" content="#0ea5e9" />
+  
+  <!-- Structured Data for Medical Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalOrganization",
+    "name": "Lianas Medical Centre",
+    "description": "A privately-owned low-cost community health center in Kangemi, Westlands Sub County, Nairobi County.",
+    "url": "https://lianasmedicalcentre.com",
+    "logo": "https://lianasmedicalcentre.com/assets/images/logo.png",
+    "image": "https://lianasmedicalcentre.com/assets/images/main_logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Christ-The-King Catholic Church",
+      "addressLocality": "Kangemi",
+      "addressRegion": "Westlands Sub County",
+      "addressCountry": "Kenya"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-1.267167",
+      "longitude": "36.752111"
+    },
+    "telephone": ["+254722701542", "+254752166411"],
+    "email": "lianasmedicalcentre@gmail.com",
+    "openingHours": "Mo-Su 00:00-23:59",
+    "medicalSpecialty": ["General Practice", "Maternity", "Dental", "Laboratory", "Emergency Medicine"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Medical Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "MedicalProcedure",
+            "name": "Inpatient Services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "MedicalProcedure",
+            "name": "Outpatient Services"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "MedicalProcedure",
+            "name": "Maternity Services"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+<style>
+  .hero {
+    background: linear-gradient(135deg, #0048AB 0%, #0048AB 75%, rgba(255, 255, 255, 0.08) 100%);
+  }
+</style>
+<body class="scroll-smooth text-slate-800">
+  <!-- Header / Navigation -->
+  <header id="header" class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#home" class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="Lianas Medical Centre logo" class="h-10 w-auto" />
+        <span class="font-semibold text-sky-700">Lianas Medical Centre</span>
+      </a>
+      <button id="menu-toggle" aria-label="Toggle navigation" class="md:hidden inline-flex items-center justify-center p-2 rounded text-sky-700 hover:bg-sky-50">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+      <ul id="nav-links" class="hidden md:flex items-center gap-6 text-slate-700">
+        <li><a class="hover:text-sky-700" href="#home">Home</a></li>
+        <li><a class="hover:text-sky-700" href="#about">About</a></li>
+        <li><a class="hover:text-sky-700" href="#services">Services</a></li>
+        <li><a class="hover:text-sky-700" href="#contact">Contact</a></li>
+        <li><a class="hover:text-sky-700" href="news.html">News</a></li>
+      </ul>
+    </nav>
+    <ul id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2 bg-white border-t border-slate-100">
+      <li><a class="block py-2 hover:text-sky-700" href="#home">Home</a></li>
+      <li><a class="block py-2 hover:text-sky-700" href="#about">About</a></li>
+      <li><a class="block py-2 hover:text-sky-700" href="#services">Services</a></li>
+      <li><a class="block py-2 hover:text-sky-700" href="#contact">Contact</a></li>
+      <li><a class="block py-2 hover:text-sky-700" href="news.html">News</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero relative">
+    <!-- Removed gradient overlay -->
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 sm:py-12 text-white">
+      <div class="max-w-2xl mx-auto text-center">
+        <img src="assets/images/main_logo.png" alt="Lianas Medical Centre white logo" class="h-[9.45rem] sm:h-[10.8rem] md:h-[13.5rem] w-auto mx-auto mb-6 drop-shadow" />
+        <h1 class="text-3xl sm:text-4xl font-bold drop-shadow">Lianas Medical Centre</h1>
+        <p class="mt-4 text-sky-100 drop-shadow">SERVICE TO HUMANITY IS SERVICE TO GOD</p>
+        <a href="#contact" class="mt-8 inline-flex items-center gap-2 rounded bg-white text-sky-700 px-5 py-3 font-semibold shadow hover:bg-sky-50">Book an Appointment <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl font-bold text-sky-700">About Us</h2>
+          <div class="mt-4 space-y-4 text-slate-700">
+            <p>Lianas Medical Centre is a privately-owned low-cost community health center in Kangemi, Westlands Sub County, Nairobi County.</p>
+            <p>Started in 1998 as a small healthcare facility with less than 5 beds, Lianas has grown to a 20-bed hospital housed in a modern building with advanced treatment and diagnostic technologies.</p>
+            <p>We are one of the oldest and busiest medium-sized private hospitals in Westlands, offering both maternity and clinical services. In maternity alone, we have registered over 14,000 normal births since inception. We attend to over 15,000 patients annually.</p>
+            <p>As a private enterprise, we bring healthcare closer to local communities in a compassionate, dignified, and affordable way. The Social Health Authority (SHA) has contracted us to offer inpatient, outpatient, minor surgery, dental, and maternity services to all its members.</p>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-xl font-semibold text-sky-700">Mission</h3>
+            <p class="mt-2 text-slate-700">To fight poverty and suffering through health by providing affordable and accessible healthcare — essential in breaking the vicious cycle of poverty and disease in our communities.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-sky-700">Vision</h3>
+            <p class="mt-2 text-slate-700">To turn our health centre into consumer-driven healthcare with superior clinical outcomes, customer satisfaction, and a disease-free population.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-sky-700">Core Competencies</h3>
+            <ul class="mt-3 space-y-2 list-disc list-inside text-slate-700">
+              <li>• Professional and skilled staff</li>
+              <li>• Affordable & accessible healthcare</li>
+              <li>• Modern diagnostic technologies</li>
+              <li>• Excellent customer service</li>
+              <li>• 24-hour integrated services</li>
+            </ul>
+          </div>
+                     <div>
+             <img src="assets/images/team/group.png" alt="Lianas Medical Centre team" class="rounded-lg shadow w-1/2" />
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl font-bold text-sky-700">Our Services</h2>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Inpatient & Daycare -->
+        <article class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+          <img src="assets/images/services/inpatient.png" alt="Inpatient & Daycare Services" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-slate-800">Inpatient & Daycare Services</h3>
+            <p class="mt-2 text-sm text-slate-600">20-bed inpatient department offering round-the-clock care for medical and maternity cases.</p>
+          </div>
+        </article>
+        <!-- Outpatient -->
+        <article class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+          <img src="assets/images/services/outpatient.png" alt="General Outpatient" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-slate-800">General Outpatient</h3>
+            <p class="mt-2 text-sm text-slate-600">Routine medical consultations, diagnosis, and treatment for a wide range of conditions.
+Daily operations staffed by qualified clinicians.</p>
+          </div>
+        </article>
+        <!-- Maternity -->
+        <article class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+          <img src="assets/images/services/maternity.png" alt="Maternity Services" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-slate-800">Maternity Services</h3>
+            <p class="mt-2 text-sm text-slate-600">Comprehensive antenatal, delivery, and postnatal care.
+Experienced midwives and medical staff ensure safe childbirth.
+Immunizations, growth monitoring, nutrition counseling, and pediatric services (KEPA & Child Welfare clinics).</p>
+          </div>
+        </article>
+        <!-- Ultrasound -->
+        <article class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+          <img src="assets/images/services/ultrasound.png" alt="Ultrasound Services" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-slate-800">Ultrasound Services</h3>
+            <p class="mt-2 text-sm text-slate-600">Obstetric, abdominal, pelvic, and other diagnostic imaging.</p>
+          </div>
+        </article>
+        <!-- Ambulance -->
+        <article class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+          <img src="assets/images/services/ambulance.png" alt="Ambulance Services" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-slate-800">Ambulance Services</h3>
+            <p class="mt-2 text-sm text-slate-600">Emergency and non-emergency medical transport.
+Safe referrals and timely access to care.</p>
+          </div>
+        </article>
+        <!-- Dental -->
+        <article class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+          <img src="assets/images/services/dental.png" alt="Dental Services" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-slate-800">Dental Services</h3>
+            <p class="mt-2 text-sm text-slate-600">General dental care: cleaning, extractions, fillings, oral hygiene education.</p>
+          </div>
+        </article>
+        <!-- Pharmacy -->
+        <article class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+          <img src="assets/images/services/pharmacy.png" alt="Pharmacy Services" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-slate-800">Pharmacy Services</h3>
+            <p class="mt-2 text-sm text-slate-600">Stocked with essential, high-quality medications and health supplies.</p>
+          </div>
+        </article>
+        <!-- Eye Clinic -->
+        <article class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+          <img src="assets/images/services/eye-clinic.png" alt="Eye Clinic Services" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-slate-800">Eye Clinic Services</h3>
+            <p class="mt-2 text-sm text-slate-600">In partnership with DOT Glasses Kenya.
+Basic eye check-ups, vision screening, and prescription of corrective glasses.</p>
+          </div>
+        </article>
+        <!-- Laboratory -->
+        <article class="bg-white rounded-lg shadow hover:shadow-md transition overflow-hidden">
+          <img src="assets/images/services/laboratory.png" alt="Laboratory Services" class="h-44 w-full object-cover" />
+          <div class="p-5">
+            <h3 class="font-semibold text-slate-800">Laboratory Services</h3>
+            <p class="mt-2 text-sm text-slate-600">Blood work, urinalysis, stool analysis, infectious disease screening.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl font-bold text-sky-700">Contact</h2>
+          <div class="mt-4 space-y-4 text-slate-700">
+            <div>
+              <h3 class="font-semibold text-slate-800">Phone Numbers:</h3>
+              <p>0722 701 542 / 0752 166 411</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-800">Email:</h3>
+              <p>lianasmedicalcentre@gmail.com</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-800">Social Media:</h3>
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fab fa-facebook text-blue-600 text-xl"></i>
+                <a href="https://www.facebook.com/LianasMedicalCentre" target="_blank" class="text-sky-700 hover:text-sky-900 hover:underline">Lianas Medical Centre</a>
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <i class="fab fa-instagram text-pink-600 text-xl"></i>
+                <a href="https://www.instagram.com/Lianasmedcentre" target="_blank" class="text-sky-700 hover:text-sky-900 hover:underline">@Lianasmedcentre</a>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fab fa-whatsapp text-green-600 text-xl"></i>
+                <a href="https://wa.me/254752166411" target="_blank" class="text-sky-700 hover:text-sky-900 hover:underline">0752166411</a>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-800">Address:</h3>
+              <p>Kangemi, Westlands Sub County, Nairobi County, Kenya</p>
+              <p>(Near Christ-The-King Catholic Church)</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="space-y-6">
+          <div class="h-64 w-full rounded-lg overflow-hidden shadow">
+                         <iframe title="Location map" class="w-full h-full" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-1.267167,36.752111&output=embed"></iframe>
+          </div>
+          <form id="contact-form" class="bg-slate-50 rounded-lg p-6 shadow space-y-4" aria-label="Contact form">
+            <div>
+              <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
+              <input id="name" name="name" type="text" required class="mt-1 block w-full rounded border-slate-300 focus:border-sky-500 focus:ring-sky-500" />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+              <input id="email" name="email" type="email" required class="mt-1 block w-full rounded border-slate-300 focus:border-sky-500 focus:ring-sky-500" />
+            </div>
+            <div>
+              <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+              <textarea id="message" name="message" rows="4" required class="mt-1 block w-full rounded border-slate-300 focus:border-sky-500 focus:ring-sky-500"></textarea>
+            </div>
+            <button type="submit" class="inline-flex items-center gap-2 rounded bg-sky-600 text-white px-5 py-2.5 font-semibold shadow hover:bg-sky-700">Send <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex flex-col gap-4">
+        <div class="flex items-center gap-10">
+          <p>© 2025 Lianas Medical Centre – All Rights Reserved</p>
+          <div class="flex items-center gap-2">
+            <span class="text-sm opacity-80">In partnership with:</span>
+            <img src="assets/images/DOT.png" alt="Department of Transport" class="h-12 w-auto opacity-95 hover:opacity-100 transition-opacity" />
+          </div>
+          <div class="flex items-center">
+            <img src="assets/images/SHA.png" alt="Social Health Authority" class="h-12 w-auto opacity-95 hover:opacity-100 transition-opacity" />
+          </div>
+        </div>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a>
+          <span class="text-slate-400">|</span>
+          <span class="text-slate-400">Compliant with Kenya Data Protection Act 2019</span>
+        </div>
+      </div>
+              <div class="flex items-center gap-4 text-xl">
+          <a aria-label="Facebook" href="https://www.facebook.com/LianasMedicalCentre" target="_blank" class="hover:text-white"><i class="fab fa-facebook"></i></a>
+          <a aria-label="Instagram" href="https://www.instagram.com/Lianasmedcentre" target="_blank" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a aria-label="WhatsApp" href="https://wa.me/254752166411" target="_blank" class="hover:text-white"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-4 z-50 hidden">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-sm">
+        <p>We use cookies to improve your experience on our website. This is an informative website that primarily provides information about our medical services, location, and contact details. We do not collect personal medical information through this website.</p>
+      </div>
+      <div class="flex gap-3">
+        <button id="cookie-accept" class="bg-sky-600 hover:bg-sky-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors">
+          Accept
+        </button>
+        <button id="cookie-decline" class="bg-slate-600 hover:bg-slate-700 text-white px-4 py-2 rounded text-sm font-medium transition-colors">
+          Decline
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
